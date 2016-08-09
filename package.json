@@ -1,0 +1,40 @@
+{
+  "name": "bind-methods",
+  "version": "0.0.0",
+  "description": "Bind all methods in an object to itself or a specified context",
+  "license": "MIT",
+  "repository": "sindresorhus/bind-methods",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "bind",
+    "methods",
+    "object",
+    "method",
+    "function",
+    "all",
+    "instance",
+    "this",
+    "self",
+    "context"
+  ],
+  "devDependencies": {
+    "ava": "*",
+    "xo": "*"
+  },
+  "xo": {
+    "esnext": true
+  }
+}
