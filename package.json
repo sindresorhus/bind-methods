@@ -1,6 +1,6 @@
 {
   "name": "bind-methods",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Bind all methods in an object to itself or a specified context",
   "license": "MIT",
   "repository": "sindresorhus/bind-methods",
