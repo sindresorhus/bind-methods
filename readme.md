@@ -36,11 +36,11 @@ message2();
 
 ## API
 
-### bindMethods(object, [context])
+### bindMethods(input, [context])
 
-Bind methods in `object` to itself or `context` if specified.
+Bind methods in `input` to itself or `context` if specified. Returns the `input` object.
 
-#### object
+#### input
 
 Type: `Object`
 

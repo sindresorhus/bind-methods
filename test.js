@@ -12,7 +12,8 @@ test(t => {
 	const message = unicorn.message;
 	t.throws(() => message(), /Cannot read/);
 
-	m(unicorn);
+	const bounded = m(unicorn);
+	t.is(bounded, unicorn);
 
 	const message2 = unicorn.message;
 	t.is(message2(), 'Rainbow is awesome!');
