@@ -9,4 +9,6 @@ module.exports = (obj, context) => {
 			obj[key] = val.bind(context);
 		}
 	}
+
+	return obj;
 };

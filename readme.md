@@ -38,7 +38,7 @@ message2();
 
 ### bindMethods(object, [context])
 
-Bind methods in `object` to itself or `context` if specified.
+Bind methods in `object` to itself or `context` if specified and returns the `object` object.
 
 #### object
 
