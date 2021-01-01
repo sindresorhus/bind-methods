@@ -1,4 +1,4 @@
-# bind-methods [![Build Status](https://travis-ci.org/sindresorhus/bind-methods.svg?branch=master)](https://travis-ci.org/sindresorhus/bind-methods)
+# bind-methods
 
 > Bind all methods in an object to itself or a specified context
 
