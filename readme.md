@@ -2,18 +2,16 @@
 
 > Bind all methods in an object to itself or a specified context
 
-
 ## Install
 
 ```
-$ npm install --save bind-methods
+$ npm install bind-methods
 ```
-
 
 ## Usage
 
 ```js
-const bindMethods = require('bind-methods');
+import bindMethods from 'bind-methods';
 
 const unicorn = {
 	name: 'Rainbow',
@@ -33,32 +31,27 @@ message2();
 //=> 'Rainbow is awesome!'
 ```
 
-
 ## API
 
-### bindMethods(input, [context])
+### bindMethods(input, context?)
 
-Bind methods in `input` to itself or `context` if specified. Returns the `input` object.
+Bind methods in `input` to itself or `context` if specified.
+
+Returns the `input` object.
 
 #### input
 
-Type: `Object`
+Type: `object`
 
 Object with methods to bind.
 
 #### context
 
-Type: `Object`<br>
+Type: `object`\
 Default: The `input` object
 
 Object to bind the methods to.
 
-
 ## Related
 
 - [auto-bind](https://github.com/sindresorhus/auto-bind) - Automatically bind methods to their class instance
-
-
-## License
-
-MIT © [Sindre Sorhus](https://sindresorhus.com)

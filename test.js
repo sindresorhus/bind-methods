@@ -1,7 +1,7 @@
 import test from 'ava';
-import m from './';
+import bindMethods from './index.js';
 
-test(t => {
+test('main', t => {
 	const unicorn = {
 		name: 'Rainbow',
 		message() {
@@ -9,10 +9,14 @@ test(t => {
 		}
 	};
 
-	const message = unicorn.message;
-	t.throws(() => message(), /Cannot read/);
+	const {message} = unicorn;
+	t.throws(() => {
+		message();
+	}, {
+		message: /Cannot read/
+	});
 
-	const bounded = m(unicorn);
+	const bounded = bindMethods(unicorn);
 	t.is(bounded, unicorn);
 
 	const message2 = unicorn.message;
